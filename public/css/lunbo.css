@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#show {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#show>span {
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    top: 50%;
+    margin-top: -12px;
+    display: none;
+}
+
+#show:hover>span {
+    display: block;
+}
+
+#show>span:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#show>#left {
+    /* 圆角 */
+    border-radius: 0 50% 50% 0;
+    position: absolute;
+    left: -7px;
+}
+
+#show>#right {
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    right: -7px;
+}
+
+#show>#banner {
+    list-style: none;
+    width: 500px;
+    position: relative;
+}
+
+#show>#banner>li {
+    width: 500px;
+    /* 	height:300px; */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+#show>#banner>.show {
+    opacity: 1;
+}
+
+#show>#banner>li>img {
+    width: 500px;
+    height: 300px;
+}
+
+#show>#cricle {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2px 3px;
+    border-radius: 10px;
+    margin-left: -33px;
+}
+
+#show>#cricle>li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    float: left;
+    margin-right: 5px;
+}

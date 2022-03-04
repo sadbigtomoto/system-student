@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.25/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/dashboard/">
+
+    <title>学生信息管理系统</title>
+    <link rel="stylesheet" href="/node_modules/bookstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/public/css/gongong.css">
+</head>
+
+<body>
+    <a class='btn btn-success' href="/admin/adminindex/student/studentself">返回</a>
+    <h2 class="sub-header">添加学生</h2>
+    <form action="/admin/adminindex/student/studentselfnew" method="post">
+        <div class="form-group">
+            <label for="name">名字</label>
+            <input type="text" class="form-control" id="name" name='name'>
+        </div>
+        <div class="form-group">
+            <label for="schoolTime">年级</label>
+            <input type="text" class="form-control" id="schoolTime" name="schoolTime">
+        </div>
+        <div class="form-group">
+            <label for="major">专业</label>
+            <input type="text" class="form-control" id="major" name="major">
+        </div>
+        <div class="form-group">
+            <label for="college">学院</label>
+            <input type="text" class="form-control" id="college" name="college">
+        </div>
+        <div class="form-group">
+            <label for="biaoxian">表现</label>
+            <input type="text" class="form-control" id="biaoxian" name="biaoxian">
+        </div>
+        <button type="submit" class="btn btn-default">确定</button>
+    </form>
+    </div>
+    <div id="foot">
+        <img src="/public/img/大蘑菇.png" alt="" id="img1">
+        <span style="color:skyblue;font-size: 13px;">开发单位：</span>
+        <span style="color: blue;font-weight: bold;font-size: 15px;">19软件技术D班黄跃海</span>
+    </div>
+</body>
+
+</html>

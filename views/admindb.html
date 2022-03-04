@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.25/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/dashboard/">
+    <title>学生信息管理系统</title>
+    <link href="/node_modules/bookstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/gongong.css">
+</head>
+
+<body style="text-align: center;">
+    <h2 class="sub-header">管理者数据表</h2>
+    <a class='btn btn-success' href="/admin/adminindex/admin/adminnew">添加信息</a>
+    <a class='btn btn-success' href="/admin/adminindex">返回数据库</a>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>账号</th>
+                    <th>名字</th>
+                    <th>id号</th>
+                    <th>密码</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{each admins}}
+                <tr>
+                    <td>{{$value.zhanghao}}</td>
+                    <td>{{$value.name}}</td>
+                    <td>{{$value.id1}}</td>
+                    <td>{{$value.password}}</td>
+                    <td>
+                        <a href="/admin/adminindex/admin/adminedit?id={{ $value._id}}">编辑</a>
+                        <a href="/admin/adminindex/admin/delete?id={{ $value._id}}">删除</a>
+
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div id="foot">
+        <img src="/public/img/大蘑菇.png" alt="" id="img1">
+        <span style="color:skyblue;font-size: 13px;">开发单位：</span>
+        <span style="color: blue;font-weight: bold;font-size: 15px;">19软件技术D班黄跃海</span>
+    </div>
+
+</body>
+
+</html>

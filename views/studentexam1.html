@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.25/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/dashboard/">
+    <title>学生信息管理系统</title>
+    <link href="/node_modules/bookstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/gongong.css">
+</head>
+
+<body style="text-align: center;">
+    <h2 class="sub-header">学生考试信息</h2>
+    <a class='btn btn-success' href="/student/studentindex/">返回</a>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>年级</th>
+                    <th>专业</th>
+                    <th>学院</th>
+                    <th>考试科目</th>
+                    <th>考试时间</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {{each studentexams}}
+                <tr>
+                    <td>{{$value.schoolTime}}</td>
+                    <td>{{$value.major}}</td>
+                    <td>{{$value.college}}</td>
+                    <td>{{$value.examtype}}</td>
+                    <td>{{$value.examtime}}</td>
+
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div id="foot">
+        <img src="/public/img/大蘑菇.png" alt="" id="img1">
+        <span style="color:skyblue;font-size: 13px;">开发单位：</span>
+        <span style="color: blue;font-weight: bold;font-size: 15px;">19软件技术D班黄跃海</span>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+#foot {
+    width: 400px;
+    height: 30px;
+    margin: auto;
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+
+#img1 {
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+}

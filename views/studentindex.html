@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.25/favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/dashboard/">
+    <title>学生信息管理系统</title>
+    <link href="/node_modules/bookstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/gongong.css">
+    <link rel="stylesheet" href="/public/css/lunbo.css">
+</head>
+
+<body>
+    <h2 class="sub-header" style="text-align: center;">欢迎使用学生信息管理系统</h2>
+    <a class='btn btn-success' href="/">返回登录</a>
+    <div style="text-align: center;"><a class='btn btn-success' href="/student/studentindex/studentself">个人信息</a>
+        <a class='btn btn-success' href="/student/studentindex/studentcj">个人成绩</a>
+        <a class='btn btn-success' href="/student/studentindex/studentexam">考试安排</a>
+        <a class='btn btn-success' href="/student/studentindex/studentkc">课程表</a>
+        <a class='btn btn-success' href="/student/studentindex/studentbj">班级表格</a>
+    </div>
+
+    <div id="show" onmouseout="timer = setInterval(a,1000,1)" onmouseover="clearInterval(timer)">
+        <ul id="banner">
+            <li class="show" style="opacity: 1;"><img src="/public/img/1.jpg" alt=""></li>
+            <li><img src="/public/img/2.jpg" alt=""></li>
+            <li><img src="/public/img/3.jpg" alt=""></li>
+            <li><img src="/public/img/4.jpg" alt=""></li>
+            <li><img src="/public/img/5.jpg" alt=""></li>
+        </ul>
+        <span id="left" onclick="a(-1)">&lt;</span>
+        <span id="right" onclick="a(1)">&gt;</span>
+        <ul id="cricle">
+            <li style="background:#f50;" class="a" onclick="a(0,this.index)"></li>
+            <li class="a" onclick="a(0,this.index)"></li>
+            <li class="a" onclick="a(0,this.index)"></li>
+            <li class="a" onclick="a(0,this.index)"></li>
+            <li style="margin-right:0px;" class="a" onclick="a(0,this.index)"></li>
+        </ul>
+    </div>
+    <div id="foot">
+        <img src="/public/img/大蘑菇.png" alt="" id="img1">
+        <span style="color:skyblue;font-size: 13px;">开发单位：</span>
+        <span style="color: blue;font-weight: bold;font-size: 15px;">19软件技术D班黄跃海</span>
+    </div>
+    <script src="/public/js/lunbo.js"></script>
+</body>
+
+</html>
